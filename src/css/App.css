@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+* {
+  font-family: "League Spartan", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 100px;
+  pointer-events: none;
+}
+
+.landing_screen {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.btn_primary {
+  padding: 2px 5px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 1);
+}
+
+.sceneWrapper {
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  height: 100vh;
+}
+
+.overlay-logo {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  width: 100px;
+  z-index: 10;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: 14px;
+  padding: 2px 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.landing_screen.pause {
+  background-color: #00000085;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
+
+.landing_screen.pause.hide {
+  display: none;
+}
